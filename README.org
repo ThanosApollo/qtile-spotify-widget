@@ -1,7 +1,7 @@
 #+title: Qtile Spotify Widget
 #+author: Thanos Apollo
 
-/I do not use this widget anymore, nor spotify/
+/I do not use this widget anymore, nor spotify./
 /qtile offers similar built-in widgets, I just wanted something that constantly pulls from dbus +play around with it/
 ** About
 + A simple qtile widget to display your current song using [[https://pypi.org/project/dbus-python/][dbus-python]]
