@@ -1,0 +1,37 @@
+#+title: Qtile Spotify Widget
+#+author: Thanos Apollo
+
+/I do not use this widget anymore, nor spotify/
+/qtile offers similar built-in widgets, I just wanted something that constantly pulls from dbus +play around with it/
+** About
++ A simple qtile widget to display your current song using [[https://pypi.org/project/dbus-python/][dbus-python]]
++ Pause/next/previous song using [[https://aur.archlinux.org/packages/spotify-control][spotify-control]]
+
+** Usage
+/Make sure you have installed all the dependencies/
++ clone the repo in your qtile folder
++ Import the widget in your config.py
++ Add in your widget list
+/for example/
+   #+begin_src python
+     #Your imports
+     from spotify_widget import Spotify
+     ##..
+     ##..
+     ##..
+     ##YourWidgetList = [
+     widget.Spacer(
+	 length=7,
+	 padding=10,
+     ),
+     Spotify(
+	 fontsize = 12,
+	 background = dracula["bg"],
+	 color = dracula["green"],
+	 fmt = '{}',
+	 font = "JetBrains Mono Bold"
+     ),
+     #Random.widget ]
+   #+end_src
+
+
